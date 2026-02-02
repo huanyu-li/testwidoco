@@ -51,11 +51,8 @@ jobs:
                 -ontFile "$ontology_file" \
                 -outFolder docs/$base_name \
                 -rewriteAll \
-                -includeImportedOntologies \
-                -htaccess \
                 -webVowl \
-                -licensius \
-                -ignoreIndividuals
+                -licensius 
               
               echo "Documentation generated for $ontology_file in docs/$base_name"
             fi
