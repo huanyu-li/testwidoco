@@ -8,21 +8,52 @@ This repository hosts ontology files and automatically generates documentation u
 .
 ├── .github/
 │   └── workflows/
-│       └── generate-docs.yml    # GitHub Actions workflow for documentation generation
-├── ontology/                     # Place your ontology files here (.owl, .ttl, .rdf)
-├── docs/                         # Generated documentation (auto-generated, do not edit manually)
-└── README.md                     # This file
+│       └── generate-docs.yml         # GitHub Actions workflow
+├── ontology/                          # Ontology files organized by module/version
+│   ├── module1/
+│   │   ├── 0.1/
+│   │   │   └── ontology.owl
+│   │   └── 0.2/
+│   │       └── ontology.owl
+│   └── module2/
+│       └── 1.0/
+│           └── ontology.ttl
+├── docs/                              # Generated documentation (auto-generated)
+│   ├── module1/
+│   │   ├── 0.1/
+│   │   │   └── index.html
+│   │   └── 0.2/
+│   │       └── index.html
+│   └── module2/
+│       └── 1.0/
+│           └── index.html
+├── generate_docs_local.py             # Local testing script
+└── README.md                          # This file
 ```
+
+### Folder Organization
+
+Ontology files should be organized as: `ontology/{module}/{version}/{ontology-file}.{owl|ttl|rdf}`
+
+This structure:
+- Keeps different modules separated
+- Maintains version history
+- Generates documentation at: `docs/{module}/{version}/index.html`
+- Creates clean URLs on GitHub Pages: `https://username.github.io/repo/module/version/`
 
 ## How It Works
 
-1. **Add or update ontology files**: Place your ontology files (`.owl`, `.ttl`, or `.rdf`) in the `ontology/` directory
+1. **Add or update ontology files**: Place your ontology files (`.owl`, `.ttl`, or `.rdf`) in the `ontology/{module}/{version}/` directory structure
 2. **Push to GitHub**: Commit and push your changes to the `main` or `master` branch
 3. **Automatic documentation generation**: The GitHub Actions workflow will:
    - Detect changes to ontology files
-   - Download WIDOCO
+   - Download WIDOCO (JDK-17 version)
    - Generate comprehensive documentation for each ontology
+   - Maintain the module/version folder structure
+   - Rename `index-en.html` to `index.html`
    - Commit and push the generated documentation to the `docs/` directory
+
+Your documentation will be available at: `https://[username].github.io/[repo]/[module]/[version]/index.html`
 
 ## Setup Instructions
 
@@ -53,6 +84,60 @@ To host your documentation online:
 4. Click **Save**
 5. Your documentation will be available at `https://[username].github.io/[repository-name]/`
 
+## Local Testing
+
+Before pushing to GitHub, you can test documentation generation locally using the provided Python script.
+
+### Prerequisites
+
+- Python 3.6+
+- Java 17+ ([Download here](https://adoptium.net/))
+
+### Usage
+
+1. **Organize your ontology files** in the module/version structure:
+   ```
+   ontology/
+   ├── module1/
+   │   ├── 0.1/
+   │   │   └── ontology.owl
+   │   └── 0.2/
+   │       └── ontology.owl
+   └── module2/
+       └── 1.0/
+           └── ontology.ttl
+   ```
+
+2. **Run the test script**:
+   ```bash
+   python3 generate_docs_local.py
+   ```
+
+3. **View the documentation**:
+   
+   The script will offer to start a local web server automatically. Type `y` when prompted.
+   
+   Or manually start a server:
+   ```bash
+   cd docs
+   python3 -m http.server 8000
+   ```
+   
+   Then open in your browser: `http://localhost:8000/module/version/index.html`
+
+### Important: CORS Restrictions
+
+⚠️ **Do not open `index.html` files directly** (using `file://` protocol). WIDOCO documentation requires an HTTP server due to JavaScript cross-origin restrictions. Always use a web server for local viewing.
+
+The local testing script:
+- Downloads WIDOCO automatically
+- Generates documentation with the same settings as GitHub Actions
+- Maintains the module/version folder structure
+- Renames `index-en.html` to `index.html`
+- Offers to start a web server for immediate viewing
+
+See `LOCAL-TESTING-README.md` and `VIEWING-DOCS-LOCALLY.md` for detailed instructions.
+
 ## Manual Trigger
 
 You can also manually trigger the documentation generation:
@@ -66,11 +151,10 @@ You can also manually trigger the documentation generation:
 The workflow uses the following WIDOCO options:
 
 - `-rewriteAll`: Overwrites previous documentation
-- `-includeImportedOntologies`: Includes imported ontologies in documentation
-- `-htaccess`: Generates .htaccess file for proper content negotiation
 - `-webVowl`: Includes WebVOWL visualization
 - `-licensius`: Adds license information
-- `-ignoreIndividuals`: Skips individual instances (can be removed if needed)
+
+Note: The workflow generates documentation directly in `docs/{module}/{version}/` structure and automatically renames `index-en.html` to `index.html`.
 
 ## Customization
 
@@ -124,7 +208,34 @@ Here's a minimal example ontology you can use for testing:
     rdfs:comment "An example class in the ontology" .
 ```
 
-Save this as `ontology/example.ttl` and push to see the documentation generation in action.
+Save this in the proper structure:
+```bash
+mkdir -p ontology/example/0.1
+# Save the above content as ontology/example/0.1/example.ttl
+```
+
+After pushing, documentation will be generated at `docs/example/0.1/index.html`
+
+## Quick Start Example
+
+```bash
+# 1. Create module/version structure
+mkdir -p ontology/mymodule/0.1
+
+# 2. Add your ontology file
+cp your-ontology.owl ontology/mymodule/0.1/
+
+# 3. Test locally (optional)
+python3 generate_docs_local.py
+
+# 4. Commit and push
+git add ontology/mymodule/
+git commit -m "Add mymodule v0.1"
+git push
+
+# Documentation will be auto-generated at:
+# https://[username].github.io/[repo]/mymodule/0.1/index.html
+```
 
 ## License
 
