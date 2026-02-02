@@ -47,14 +47,15 @@ jobs:
             # Example: core/0.1/myonto.owl -> core/0.1
             dir_path=$(dirname "$relative_path")
             
-            # Get the filename without extension
+            # Get the filename without extension for logging
             # Example: myonto.owl -> myonto
             file_name=$(basename "$ontology_file")
             base_name="${file_name%.*}"
             
             # Create output directory maintaining the module/version structure
-            # Example: docs/core/0.1/myonto
-            output_dir="docs/$dir_path/$base_name"
+            # Documentation goes directly in docs/module/version/ folder
+            # Example: docs/core/0.1/
+            output_dir="docs/$dir_path"
             mkdir -p "$output_dir"
             
             echo "  Module/Version path: $dir_path"
@@ -71,6 +72,13 @@ jobs:
               -licensius 
             
             echo "Documentation generated for $ontology_file in $output_dir"
+            
+            # Rename index-en.html to index.html if it exists
+            if [ -f "$output_dir/index-en.html" ]; then
+              mv "$output_dir/index-en.html" "$output_dir/index.html"
+              echo "Renamed index-en.html to index.html"
+            fi
+            
             echo "---"
           done
       
