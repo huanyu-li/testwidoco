@@ -26,36 +26,52 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '11'
+          java-version: '17'
       
       - name: Download WIDOCO
         run: |
           wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar -O widoco.jar
-          
       
       - name: Generate documentation
         run: |
-          # Find all ontology files
-          for ontology_file in ontology/*.{owl,ttl,rdf}; do
-            if [ -f "$ontology_file" ]; then
-              echo "Processing $ontology_file"
-              
-              # Get the base name without extension
-              base_name=$(basename "$ontology_file" | sed 's/\.[^.]*$//')
-              
-              # Create output directory
-              mkdir -p docs/$base_name
-              
-              # Generate documentation
-              java -jar widoco.jar \
-                -ontFile "$ontology_file" \
-                -outFolder docs/$base_name \
-                -rewriteAll \
-                -webVowl \
-                -licensius 
-              
-              echo "Documentation generated for $ontology_file in docs/$base_name"
-            fi
+          # Find all ontology files recursively in the ontology folder
+          # Expected structure: ontology/module/version/*.{owl,ttl,rdf}
+          find ontology -type f \( -name "*.owl" -o -name "*.ttl" -o -name "*.rdf" \) | while read ontology_file; do
+            echo "Processing $ontology_file"
+            
+            # Extract the relative path from ontology/
+            # Example: ontology/core/0.1/myonto.owl -> core/0.1/myonto.owl
+            relative_path="${ontology_file#ontology/}"
+            
+            # Get the directory path without the filename
+            # Example: core/0.1/myonto.owl -> core/0.1
+            dir_path=$(dirname "$relative_path")
+            
+            # Get the filename without extension
+            # Example: myonto.owl -> myonto
+            file_name=$(basename "$ontology_file")
+            base_name="${file_name%.*}"
+            
+            # Create output directory maintaining the module/version structure
+            # Example: docs/core/0.1/myonto
+            output_dir="docs/$dir_path/$base_name"
+            mkdir -p "$output_dir"
+            
+            echo "  Module/Version path: $dir_path"
+            echo "  Ontology name: $base_name"
+            echo "  Output directory: $output_dir"
+            
+            # Generate documentation
+            java -jar widoco.jar \
+              -ontFile "$ontology_file" \
+              -outFolder "$output_dir" \
+              -rewriteAll \
+              -includeImportedOntologies \
+              -webVowl \
+              -licensius 
+            
+            echo "Documentation generated for $ontology_file in $output_dir"
+            echo "---"
           done
       
       - name: Commit and push documentation

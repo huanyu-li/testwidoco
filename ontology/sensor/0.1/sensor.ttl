@@ -1,0 +1,59 @@
+@prefix : <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://example.org/ontology> .
+
+<http://example.org/ontology> rdf:type owl:Ontology ;
+    dc:title "Example Ontology"@en ;
+    dc:description "An example ontology for demonstrating automated WIDOCO documentation generation"@en ;
+    dc:creator "Your Name" ;
+    dcterms:created "2025-02-02"^^xsd:date ;
+    owl:versionInfo "1.0.0" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+:hasProperty rdf:type owl:ObjectProperty ;
+    rdfs:domain :ExampleClass ;
+    rdfs:range :PropertyClass ;
+    rdfs:comment "An example object property linking ExampleClass to PropertyClass"@en ;
+    rdfs:label "has property"@en .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+:hasValue rdf:type owl:DatatypeProperty ;
+    rdfs:domain :ExampleClass ;
+    rdfs:range xsd:string ;
+    rdfs:comment "An example data property for storing string values"@en ;
+    rdfs:label "has value"@en .
+
+:hasCount rdf:type owl:DatatypeProperty ;
+    rdfs:domain :ExampleClass ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "An example data property for storing integer counts"@en ;
+    rdfs:label "has count"@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+:ExampleClass rdf:type owl:Class ;
+    rdfs:comment "The main example class in this ontology"@en ;
+    rdfs:label "Example Class"@en .
+
+:PropertyClass rdf:type owl:Class ;
+    rdfs:comment "A class representing properties of ExampleClass"@en ;
+    rdfs:label "Property Class"@en .
+
+:SubClass rdf:type owl:Class ;
+    rdfs:subClassOf :ExampleClass ;
+    rdfs:comment "A subclass of ExampleClass demonstrating inheritance"@en ;
+    rdfs:label "Sub Class"@en .
