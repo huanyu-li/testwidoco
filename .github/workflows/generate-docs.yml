@@ -1,0 +1,76 @@
+name: Generate Ontology Documentation
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'ontology/**/*.owl'
+      - 'ontology/**/*.ttl'
+      - 'ontology/**/*.rdf'
+
+  workflow_dispatch:
+
+jobs:
+  generate-documentation:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+      
+      - name: Download WIDOCO
+        run: |
+          wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies.jar -O widoco.jar
+      
+      - name: Generate documentation
+        run: |
+          # Find all ontology files
+          for ontology_file in ontology/*.{owl,ttl,rdf}; do
+            if [ -f "$ontology_file" ]; then
+              echo "Processing $ontology_file"
+              
+              # Get the base name without extension
+              base_name=$(basename "$ontology_file" | sed 's/\.[^.]*$//')
+              
+              # Create output directory
+              mkdir -p docs/$base_name
+              
+              # Generate documentation
+              java -jar widoco.jar \
+                -ontFile "$ontology_file" \
+                -outFolder docs/$base_name \
+                -rewriteAll \
+                -includeImportedOntologies \
+                -htaccess \
+                -webVowl \
+                -licensius \
+                -ignoreIndividuals
+              
+              echo "Documentation generated for $ontology_file in docs/$base_name"
+            fi
+          done
+      
+      - name: Commit and push documentation
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add docs/
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate ontology documentation [skip ci]"
+            git push
+          fi
