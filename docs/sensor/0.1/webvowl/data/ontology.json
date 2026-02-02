@@ -1,0 +1,173 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://example.org/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "Example Ontology"
+    },
+    "iri" : "http://example.org/ontology",
+    "version" : "1.0.0",
+    "author" : [ "Your Name" ],
+    "description" : {
+      "en" : "An example ontology for demonstrating automated WIDOCO documentation generation"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Your Name",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-02-02",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Example Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://example.org/ontology#PropertyClass",
+    "baseIri" : "http://example.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyClass",
+      "en" : "Property Class"
+    },
+    "comment" : {
+      "en" : "A class representing properties of ExampleClass"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://example.org/ontology#SubClass",
+    "baseIri" : "http://example.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubClass",
+      "en" : "Sub Class"
+    },
+    "comment" : {
+      "en" : "A subclass of ExampleClass demonstrating inheritance"
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://example.org/ontology#ExampleClass",
+    "baseIri" : "http://example.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExampleClass",
+      "en" : "Example Class"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "en" : "The main example class in this ontology"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://example.org/ontology#hasProperty",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasProperty",
+      "en" : "has property"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "An example object property linking ExampleClass to PropertyClass"
+    },
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://example.org/ontology#hasValue",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "en" : "has value"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "An example data property for storing string values"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://example.org/ontology#hasCount",
+    "baseIri" : "http://example.org/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasCount",
+      "en" : "has count"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "An example data property for storing integer counts"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  } ]
+}
