@@ -92,6 +92,14 @@ dcterms:created rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
+###  http://w3id.org/Catena-D/ontology/observation/hasParameterNumericValue
+<http://w3id.org/Catena-D/ontology/observation/hasParameterNumericValue> rdf:type owl:DatatypeProperty .
+
+
+###  http://w3id.org/Catena-D/ontology/observation/hasParameterTextualValue
+<http://w3id.org/Catena-D/ontology/observation/hasParameterTextualValue> rdf:type owl:DatatypeProperty .
+
+
 ###  http://w3id.org/Catena-D/ontology/observation/hasStatePropertyValue
 <http://w3id.org/Catena-D/ontology/observation/hasStatePropertyValue> rdf:type owl:DatatypeProperty .
 
