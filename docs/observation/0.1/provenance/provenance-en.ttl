@@ -1,0 +1,11 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://w3id.org/Catena-D/ontology/observation/0.1> a prov:Entity;
+	 dc:title "Catena-D Ontology - Observation Module";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2026-02-02";
+.
+:agent0 a prov:Agent; foaf:name "Huanyu Li".

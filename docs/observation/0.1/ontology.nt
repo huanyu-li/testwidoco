@@ -1,0 +1,154 @@
+<http://w3id.org/Catena-D/ontology/observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/Catena-D/ontology/observation> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/Catena-D/ontology/observation/0.1> .
+<http://w3id.org/Catena-D/ontology/observation> <http://purl.org/dc/elements/1.1/creator> "Huanyu Li" .
+<http://w3id.org/Catena-D/ontology/observation> <http://purl.org/dc/elements/1.1/title> "Catena-D Ontology - Observation Module"@en .
+<http://w3id.org/Catena-D/ontology/observation> <http://purl.org/dc/terms/created> "2026-02-02" .
+<http://w3id.org/Catena-D/ontology/observation> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/Catena-D/ontology/observation/consistsOf
+<http://w3id.org/Catena-D/ontology/observation/consistsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/consistsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/ObservationCollection> .
+<http://w3id.org/Catena-D/ontology/observation/consistsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/hasActualStateProperty
+<http://w3id.org/Catena-D/ontology/observation/hasActualStateProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/hasActualStateProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/FeatureOfInterest> .
+<http://w3id.org/Catena-D/ontology/observation/hasActualStateProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/StateProperty> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/hasObservationParameter
+<http://w3id.org/Catena-D/ontology/observation/hasObservationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/hasObservationParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+<http://w3id.org/Catena-D/ontology/observation/hasObservationParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/ObservationParameter> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/hasObservationValue
+<http://w3id.org/Catena-D/ontology/observation/hasObservationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/hasObservationValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+<http://w3id.org/Catena-D/ontology/observation/hasObservationValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/ObservationValue> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/hasValueForObservationParameter
+<http://w3id.org/Catena-D/ontology/observation/hasValueForObservationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/hasValueForObservationParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/ObservationParameter> .
+<http://w3id.org/Catena-D/ontology/observation/hasValueForObservationParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/ObservationValue> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/isObservedBy
+<http://w3id.org/Catena-D/ontology/observation/isObservedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/isObservedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/Catena-D/ontology/observation/observesOnProperty> .
+<http://w3id.org/Catena-D/ontology/observation/isObservedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/ObservableProperty> .
+<http://w3id.org/Catena-D/ontology/observation/isObservedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/observesOnFeatureOfInterest
+<http://w3id.org/Catena-D/ontology/observation/observesOnFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/observesOnFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+<http://w3id.org/Catena-D/ontology/observation/observesOnFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/FeatureOfInterest> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/observesOnProperty
+<http://w3id.org/Catena-D/ontology/observation/observesOnProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/Catena-D/ontology/observation/observesOnProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+<http://w3id.org/Catena-D/ontology/observation/observesOnProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/Catena-D/ontology/observation/ObservableProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/Catena-D/ontology/observation/hasParameterNumericValue
+<http://w3id.org/Catena-D/ontology/observation/hasParameterNumericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/hasParameterTextualValue
+<http://w3id.org/Catena-D/ontology/observation/hasParameterTextualValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/hasStatePropertyValue
+<http://w3id.org/Catena-D/ontology/observation/hasStatePropertyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/Catena-D/ontology/observation/FeatureOfInterest
+<http://w3id.org/Catena-D/ontology/observation/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/ObservableProperty
+<http://w3id.org/Catena-D/ontology/observation/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/Observation
+<http://w3id.org/Catena-D/ontology/observation/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/ObservationCollection
+<http://w3id.org/Catena-D/ontology/observation/ObservationCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/ObservationParameter
+<http://w3id.org/Catena-D/ontology/observation/ObservationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/ObservationValue
+<http://w3id.org/Catena-D/ontology/observation/ObservationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/Catena-D/ontology/observation/StateProperty
+<http://w3id.org/Catena-D/ontology/observation/StateProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/Catena-D/ontology/observation/isObservedBy> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/Catena-D/ontology/observation/Observation> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/Catena-D/ontology/observation/isObservedBy> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/Catena-D/ontology/observation/StateProperty> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/Catena-D/ontology/observation/ObservableProperty> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
