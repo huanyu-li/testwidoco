@@ -1,4 +1,4 @@
-@prefix : <http://w3id.org/CEON/ontology/resourceODP/> .
+@prefix : <http://w3id.org/Catena-D/ontology/resourceODP/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix odp: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,11 +8,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix location: <http://w3id.org/CEON/ontology/location/> .
-@base <http://w3id.org/CEON/ontology/resourceODP/> .
+@base <http://w3id.org/Catena-D/ontology/resourceODP/> .
 
-<http://w3id.org/Catena-D/ontology/resourceODP/> rdf:type owl:Ontology ;
-                                                  owl:versionIRI <http://w3id.org/Catena-D/ontology/resourceODP/0.1/> ;
+<http://w3id.org/Catena-D/ontology/resourceODP> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <http://w3id.org/Catena-D/ontology/resourceODP/0.1> ;
                                                   dcterms:creator "Huanyu Li" ;
                                                   dcterms:description "The resourceODP for Catena-D ontology network." ;
                                                   dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;

@@ -1,4 +1,4 @@
-@prefix : <http://w3id.org/CEON/ontology/processODP/> .
+@prefix : <http://w3id.org/Catena-D/ontology/processODP/> .
 @prefix odp: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,10 +7,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix resourceODP: <http://w3id.org/CEON/ontology/resourceODP/> .
-@base <http://w3id.org/CEON/ontology/processODP/> .
+@base <http://w3id.org/Catena-D/ontology/processODP/> .
 
-<http://w3id.org/Catena-D/ontology/processODP/> rdf:type owl:Ontology ;
+<http://w3id.org/Catena-D/ontology/processODP> rdf:type owl:Ontology ;
                                                  owl:versionIRI <http://w3id.org/Catena-D/ontology/processODP/0.1/> ;
                                                  dcterms:contributor "Eva Blomqvist" ;
                                                  dcterms:created "2025-05-20"^^xsd:date ;
@@ -21,7 +20,7 @@
                                                  dcterms:publisher "Onto-DESIDE" ;
                                                  dcterms:title "Circular Economy Ontology Network (CEON) - Process ODP" ;
                                                  vann:preferredNamespacePrefix "Catena-D-processODP" ;
-                                                 vann:preferredNamespaceUri "http://w3id.org/Catena-D/ontology/processODP/" ;
+                                                 vann:preferredNamespaceUri "http://w3id.org/Catena-D/ontology/processODP" ;
                                                  owl:versionInfo 0.1 .
 
 #################################################################
