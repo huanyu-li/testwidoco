@@ -1,0 +1,313 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/Catena-D/ontology/observation" ],
+    "title" : {
+      "en" : "Catena-D Ontology - Observation Module"
+    },
+    "iri" : "http://w3id.org/Catena-D/ontology/observation",
+    "version" : "0.1",
+    "author" : [ "Huanyu Li" ],
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Huanyu Li",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-02-02",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Catena-D Ontology - Observation Module",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/Observation",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Observation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/ObservableProperty",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservableProperty"
+    },
+    "intersection" : [ "5" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/ObservationValue",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservationValue"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/ObservationCollection",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservationCollection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/ObservationParameter",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservationParameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/FeatureOfInterest",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureOfInterest"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/StateProperty",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/hasParameterNumericValue",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasParameterNumericValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/hasActualStateProperty",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasActualStateProperty"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/hasObservationValue",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasObservationValue"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/hasObservationParameter",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasObservationParameter"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/consistsOf",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "consistsOf"
+    },
+    "domain" : "14",
+    "attributes" : [ "object", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/hasStatePropertyValue",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasStatePropertyValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/observesOnFeatureOfInterest",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "observesOnFeatureOfInterest"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/hasValueForObservationParameter",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasValueForObservationParameter"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/observesOnProperty",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "observesOnProperty"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/hasParameterTextualValue",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasParameterTextualValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/Catena-D/ontology/observation/isObservedBy",
+    "inverse" : "19",
+    "baseIri" : "http://w3id.org/Catena-D/ontology/observation",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isObservedBy"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  } ]
+}
