@@ -206,7 +206,7 @@
       "IRI-based" : "hasParameterNumericValue"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "0"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/hasActualStateProperty",
@@ -256,7 +256,7 @@
       "IRI-based" : "hasStatePropertyValue"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "16"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/observesOnFeatureOfInterest",
@@ -296,7 +296,7 @@
       "IRI-based" : "hasParameterTextualValue"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "20"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/isObservedBy",

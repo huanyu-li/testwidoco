@@ -1,7 +1,7 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "de", "hi", "en-us", "ru", "pt", "bg", "fr", "hu", "undefined", "sl", "ms", "el", "en", "it", "es", "zh", "cs", "ar", "la", "ja", "fa", "pl", "he", "ro", "tr", "en-gb" ],
+    "languages" : [ "hi", "de", "en-us", "ru", "pt", "bg", "fr", "hu", "undefined", "sl", "ms", "el", "en", "it", "es", "zh", "cs", "ar", "la", "ja", "fa", "pl", "he", "ro", "tr", "en-gb" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "Circular Economy Ontology Network (CEON) - Subset of the QUDT Unit Schema"
@@ -173,16 +173,16 @@
       "iri" : "http://qudt.org/vocab/unit/MilliL",
       "baseIri" : "http://qudt.org/vocab/unit",
       "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "MLT",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "mL",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "MLT",
           "type" : "label"
         } ],
         "plainTextDescription" : [ {
@@ -259,16 +259,16 @@
       "iri" : "http://qudt.org/vocab/unit/TONNE",
       "baseIri" : "http://qudt.org/vocab/unit",
       "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "TNE",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "t",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "TNE",
           "type" : "label"
         } ],
         "plainTextDescription" : [ {
@@ -307,16 +307,16 @@
         "undefined" : "A common metric unit of length or distance. One kilometer equals exactly 1000 meters, about 0.621 371 19 mile, 1093.6133 yards, or 3280.8399 feet. Oddly, higher multiples of the meter are rarely used; even the distances to the farthest galaxies are usually measured in kilometers. "
       },
       "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "KMT",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "km",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "KMT",
           "type" : "label"
         } ],
         "isDefinedBy" : [ {
@@ -386,10 +386,10 @@
           "value" : "http://qudt.org/vocab/prefix/Milli",
           "type" : "iri"
         } ],
-        "ucumCode" : [ {
-          "identifier" : "ucumCode",
-          "language" : "undefined",
-          "value" : "mm",
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en-gb",
+          "value" : "mil",
           "type" : "label"
         } ],
         "informativeReference" : [ {
@@ -398,10 +398,10 @@
           "value" : "http://en.wikipedia.org/wiki/Millimetre?oldid=493032457",
           "type" : "label"
         } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en-gb",
-          "value" : "mil",
+        "ucumCode" : [ {
+          "identifier" : "ucumCode",
+          "language" : "undefined",
+          "value" : "mm",
           "type" : "label"
         } ],
         "dbpediaMatch" : [ {
@@ -447,16 +447,16 @@
           "value" : "http://qudt.org/2.1/vocab/unit",
           "type" : "iri"
         } ],
-        "ucumCode" : [ {
-          "identifier" : "ucumCode",
-          "language" : "undefined",
-          "value" : "g",
-          "type" : "label"
-        } ],
         "informativeReference" : [ {
           "identifier" : "informativeReference",
           "language" : "undefined",
           "value" : "http://en.wikipedia.org/wiki/Gram?oldid=493995797",
+          "type" : "label"
+        } ],
+        "ucumCode" : [ {
+          "identifier" : "ucumCode",
+          "language" : "undefined",
+          "value" : "g",
           "type" : "label"
         } ],
         "dbpediaMatch" : [ {
@@ -498,12 +498,12 @@
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
-          "value" : "{#}",
+          "value" : "1",
           "type" : "label"
         }, {
           "identifier" : "ucumCode",
           "language" : "undefined",
-          "value" : "1",
+          "value" : "{#}",
           "type" : "label"
         } ]
       },
@@ -515,16 +515,16 @@
       "iri" : "http://qudt.org/vocab/unit/GM-PER-L",
       "baseIri" : "http://qudt.org/vocab/unit",
       "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "GL",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "g/L",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "GL",
           "type" : "label"
         } ],
         "plainTextDescription" : [ {
@@ -579,16 +579,16 @@
           "value" : "http://qudt.org/2.1/vocab/unit",
           "type" : "iri"
         } ],
-        "ucumCode" : [ {
-          "identifier" : "ucumCode",
-          "language" : "undefined",
-          "value" : "kg",
-          "type" : "label"
-        } ],
         "informativeReference" : [ {
           "identifier" : "informativeReference",
           "language" : "undefined",
           "value" : "http://en.wikipedia.org/wiki/Kilogram?oldid=493633626",
+          "type" : "label"
+        } ],
+        "ucumCode" : [ {
+          "identifier" : "ucumCode",
+          "language" : "undefined",
+          "value" : "kg",
           "type" : "label"
         } ],
         "dbpediaMatch" : [ {
@@ -605,8 +605,8 @@
         } ]
       },
       "labels" : {
-        "hi" : "किलोग्राम",
         "de" : "Kilogramm",
+        "hi" : "किलोग्राम",
         "IRI-based" : "KiloGM",
         "ru" : "килограмм",
         "pt" : "quilograma",
@@ -617,8 +617,8 @@
         "it" : "chilogrammo",
         "fr" : "kilogramme",
         "hu" : "kilogramm*",
-        "zh" : "公斤",
         "es" : "kilogramo",
+        "zh" : "公斤",
         "cs" : "kilogram",
         "ar" : "كيلوغرام",
         "la" : "chiliogramma",
@@ -626,24 +626,24 @@
         "sl" : "kilogram",
         "fa" : "کیلوگرم",
         "pl" : "kilogram",
-        "ro" : "kilogram",
         "he" : "קילוגרם",
+        "ro" : "kilogram",
         "tr" : "kilogram"
       }
     }, {
       "iri" : "http://qudt.org/vocab/unit/KiloGM-PER-L",
       "baseIri" : "http://qudt.org/vocab/unit",
       "annotations" : {
-        "symbol" : [ {
-          "identifier" : "symbol",
-          "language" : "undefined",
-          "value" : "kg/L",
-          "type" : "label"
-        } ],
         "uneceCommonCode" : [ {
           "identifier" : "uneceCommonCode",
           "language" : "undefined",
           "value" : "B35",
+          "type" : "label"
+        } ],
+        "symbol" : [ {
+          "identifier" : "symbol",
+          "language" : "undefined",
+          "value" : "kg/L",
           "type" : "label"
         } ],
         "plainTextDescription" : [ {
@@ -760,16 +760,16 @@
           "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metre",
           "type" : "iri"
         } ],
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "MTR",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "m",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "MTR",
           "type" : "label"
         } ],
         "plainTextDescription" : [ {
@@ -784,16 +784,16 @@
           "value" : "http://qudt.org/2.1/vocab/unit",
           "type" : "iri"
         } ],
-        "informativeReference" : [ {
-          "identifier" : "informativeReference",
-          "language" : "undefined",
-          "value" : "http://en.wikipedia.org/wiki/Metre?oldid=495145797",
-          "type" : "label"
-        } ],
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
           "value" : "m",
+          "type" : "label"
+        } ],
+        "informativeReference" : [ {
+          "identifier" : "informativeReference",
+          "language" : "undefined",
+          "value" : "http://en.wikipedia.org/wiki/Metre?oldid=495145797",
           "type" : "label"
         } ],
         "dbpediaMatch" : [ {
@@ -810,11 +810,11 @@
         } ]
       },
       "labels" : {
-        "hi" : "मीटर",
         "de" : "Meter",
+        "hi" : "मीटर",
         "IRI-based" : "M",
-        "ru" : "метр",
         "en-us" : "Meter",
+        "ru" : "метр",
         "pt" : "metro",
         "bg" : "метър",
         "fr" : "mètre",
@@ -824,16 +824,16 @@
         "el" : "μέτρο",
         "en" : "metre",
         "it" : "metro",
-        "zh" : "米",
         "es" : "metro",
+        "zh" : "米",
         "cs" : "metr",
         "ar" : "متر",
         "la" : "metrum",
         "ja" : "メートル",
         "fa" : "متر",
         "pl" : "metr",
-        "ro" : "metru",
         "he" : "מטר",
+        "ro" : "metru",
         "tr" : "metre"
       }
     }, {
@@ -907,16 +907,16 @@
           "value" : "http://qudt.org/2.1/vocab/unit",
           "type" : "iri"
         } ],
-        "informativeReference" : [ {
-          "identifier" : "informativeReference",
-          "language" : "undefined",
-          "value" : "http://www.oxfordreference.com/view/10.1093/acref/9780198605225.001.0001/acref-9780198605225-e-1533?rskey=b94Fd6",
-          "type" : "label"
-        } ],
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
           "value" : "a",
+          "type" : "label"
+        } ],
+        "informativeReference" : [ {
+          "identifier" : "informativeReference",
+          "language" : "undefined",
+          "value" : "http://www.oxfordreference.com/view/10.1093/acref/9780198605225.001.0001/acref-9780198605225-e-1533?rskey=b94Fd6",
           "type" : "label"
         } ],
         "udunitsCode" : [ {
@@ -929,49 +929,6 @@
       "labels" : {
         "IRI-based" : "YR",
         "en" : "Year"
-      }
-    }, {
-      "iri" : "http://qudt.org/vocab/unit/DeciM",
-      "baseIri" : "http://qudt.org/vocab/unit",
-      "description" : {
-        "undefined" : "A decimeter is a tenth of a meter."
-      },
-      "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "DMT",
-          "type" : "label"
-        } ],
-        "symbol" : [ {
-          "identifier" : "symbol",
-          "language" : "undefined",
-          "value" : "dm",
-          "type" : "label"
-        } ],
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://qudt.org/2.1/vocab/unit",
-          "type" : "iri"
-        } ],
-        "prefix" : [ {
-          "identifier" : "prefix",
-          "language" : "undefined",
-          "value" : "http://qudt.org/vocab/prefix/Deci",
-          "type" : "iri"
-        } ],
-        "ucumCode" : [ {
-          "identifier" : "ucumCode",
-          "language" : "undefined",
-          "value" : "dm",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "DeciM",
-        "en-us" : "Decimeter",
-        "en" : "Decimetre"
       }
     }, {
       "iri" : "http://qudt.org/vocab/unit/DeciM2",
@@ -1020,6 +977,49 @@
         "en" : "Square Decimetre"
       }
     }, {
+      "iri" : "http://qudt.org/vocab/unit/DeciM",
+      "baseIri" : "http://qudt.org/vocab/unit",
+      "description" : {
+        "undefined" : "A decimeter is a tenth of a meter."
+      },
+      "annotations" : {
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "DMT",
+          "type" : "label"
+        } ],
+        "symbol" : [ {
+          "identifier" : "symbol",
+          "language" : "undefined",
+          "value" : "dm",
+          "type" : "label"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://qudt.org/2.1/vocab/unit",
+          "type" : "iri"
+        } ],
+        "prefix" : [ {
+          "identifier" : "prefix",
+          "language" : "undefined",
+          "value" : "http://qudt.org/vocab/prefix/Deci",
+          "type" : "iri"
+        } ],
+        "ucumCode" : [ {
+          "identifier" : "ucumCode",
+          "language" : "undefined",
+          "value" : "dm",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DeciM",
+        "en-us" : "Decimeter",
+        "en" : "Decimetre"
+      }
+    }, {
       "iri" : "http://qudt.org/vocab/unit/OHM",
       "baseIri" : "http://qudt.org/vocab/unit",
       "description" : {
@@ -1050,16 +1050,16 @@
           "value" : "http://qudt.org/2.1/vocab/unit",
           "type" : "iri"
         } ],
-        "informativeReference" : [ {
-          "identifier" : "informativeReference",
-          "language" : "undefined",
-          "value" : "http://en.wikipedia.org/wiki/Ohm?oldid=494685555",
-          "type" : "label"
-        } ],
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
           "value" : "Ohm",
+          "type" : "label"
+        } ],
+        "informativeReference" : [ {
+          "identifier" : "informativeReference",
+          "language" : "undefined",
+          "value" : "http://en.wikipedia.org/wiki/Ohm?oldid=494685555",
           "type" : "label"
         } ],
         "dbpediaMatch" : [ {
@@ -1076,8 +1076,8 @@
         } ]
       },
       "labels" : {
-        "de" : "Ohm",
         "hi" : "ओह्म",
+        "de" : "Ohm",
         "IRI-based" : "OHM",
         "ru" : "ом",
         "pt" : "ohm",
@@ -1088,8 +1088,8 @@
         "it" : "ohm",
         "fr" : "ohm",
         "hu" : "ohm",
-        "zh" : "欧姆",
         "es" : "ohmio",
+        "zh" : "欧姆",
         "cs" : "ohm",
         "ar" : "أوم",
         "la" : "ohmium",
@@ -1102,82 +1102,22 @@
         "tr" : "ohm"
       }
     }, {
-      "iri" : "http://qudt.org/vocab/unit/DAY",
-      "baseIri" : "http://qudt.org/vocab/unit",
-      "description" : {
-        "undefined" : "Mean solar day"
-      },
-      "annotations" : {
-        "omUnit" : [ {
-          "identifier" : "omUnit",
-          "language" : "undefined",
-          "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/day",
-          "type" : "iri"
-        } ],
-        "symbol" : [ {
-          "identifier" : "symbol",
-          "language" : "undefined",
-          "value" : "day",
-          "type" : "label"
-        } ],
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "DAY",
-          "type" : "label"
-        } ],
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://qudt.org/2.1/vocab/unit",
-          "type" : "iri"
-        } ],
-        "informativeReference" : [ {
-          "identifier" : "informativeReference",
-          "language" : "undefined",
-          "value" : "http://en.wikipedia.org/wiki/Day?oldid=494970012",
-          "type" : "label"
-        } ],
-        "ucumCode" : [ {
-          "identifier" : "ucumCode",
-          "language" : "undefined",
-          "value" : "d",
-          "type" : "label"
-        } ],
-        "dbpediaMatch" : [ {
-          "identifier" : "dbpediaMatch",
-          "language" : "undefined",
-          "value" : "http://dbpedia.org/resource/Day",
-          "type" : "label"
-        } ],
-        "udunitsCode" : [ {
-          "identifier" : "udunitsCode",
-          "language" : "undefined",
-          "value" : "d",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "DAY",
-        "en" : "Day"
-      }
-    }, {
       "iri" : "http://qudt.org/vocab/unit/KiloGM-PER-M2",
       "baseIri" : "http://qudt.org/vocab/unit",
       "description" : {
         "undefined" : "Kilogram Per Square Meter (kg/m2) is a unit in the category of Surface density. It is also known as kilograms per square meter, kilogram per square metre, kilograms per square metre, kilogram/square meter, kilogram/square metre. This unit is commonly used in the SI unit system. Kilogram Per Square Meter (kg/m2) has a dimension of ML-2 where M is mass, and L is length. This unit is the standard SI unit in this category."
       },
       "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "28",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "kg/m²",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "28",
           "type" : "label"
         } ],
         "isDefinedBy" : [ {
@@ -1202,6 +1142,66 @@
         "IRI-based" : "KiloGM-PER-M2",
         "en-us" : "Kilogram per Square Meter",
         "en" : "Kilogram per Square Metre"
+      }
+    }, {
+      "iri" : "http://qudt.org/vocab/unit/DAY",
+      "baseIri" : "http://qudt.org/vocab/unit",
+      "description" : {
+        "undefined" : "Mean solar day"
+      },
+      "annotations" : {
+        "omUnit" : [ {
+          "identifier" : "omUnit",
+          "language" : "undefined",
+          "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/day",
+          "type" : "iri"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "DAY",
+          "type" : "label"
+        } ],
+        "symbol" : [ {
+          "identifier" : "symbol",
+          "language" : "undefined",
+          "value" : "day",
+          "type" : "label"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://qudt.org/2.1/vocab/unit",
+          "type" : "iri"
+        } ],
+        "ucumCode" : [ {
+          "identifier" : "ucumCode",
+          "language" : "undefined",
+          "value" : "d",
+          "type" : "label"
+        } ],
+        "informativeReference" : [ {
+          "identifier" : "informativeReference",
+          "language" : "undefined",
+          "value" : "http://en.wikipedia.org/wiki/Day?oldid=494970012",
+          "type" : "label"
+        } ],
+        "dbpediaMatch" : [ {
+          "identifier" : "dbpediaMatch",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Day",
+          "type" : "label"
+        } ],
+        "udunitsCode" : [ {
+          "identifier" : "udunitsCode",
+          "language" : "undefined",
+          "value" : "d",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DAY",
+        "en" : "Day"
       }
     }, {
       "iri" : "http://qudt.org/vocab/unit/GM-PER-M3",
@@ -1255,16 +1255,16 @@
         "undefined" : "A unit of area equal to that of a square, of sides 1cm"
       },
       "annotations" : {
-        "symbol" : [ {
-          "identifier" : "symbol",
-          "language" : "undefined",
-          "value" : "cm²",
-          "type" : "label"
-        } ],
         "uneceCommonCode" : [ {
           "identifier" : "uneceCommonCode",
           "language" : "undefined",
           "value" : "CMK",
+          "type" : "label"
+        } ],
+        "symbol" : [ {
+          "identifier" : "symbol",
+          "language" : "undefined",
+          "value" : "cm²",
           "type" : "label"
         } ],
         "isDefinedBy" : [ {
@@ -1304,16 +1304,16 @@
           "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hour",
           "type" : "iri"
         } ],
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "HUR",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "hr",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "HUR",
           "type" : "label"
         } ],
         "isDefinedBy" : [ {
@@ -1322,16 +1322,16 @@
           "value" : "http://qudt.org/2.1/vocab/unit",
           "type" : "iri"
         } ],
-        "informativeReference" : [ {
-          "identifier" : "informativeReference",
-          "language" : "undefined",
-          "value" : "http://en.wikipedia.org/wiki/Hour?oldid=495040268",
-          "type" : "label"
-        } ],
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
           "value" : "h",
+          "type" : "label"
+        } ],
+        "informativeReference" : [ {
+          "identifier" : "informativeReference",
+          "language" : "undefined",
+          "value" : "http://en.wikipedia.org/wiki/Hour?oldid=495040268",
           "type" : "label"
         } ],
         "dbpediaMatch" : [ {
@@ -1419,16 +1419,16 @@
           "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius",
           "type" : "iri"
         } ],
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "CEL",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "°C",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "CEL",
           "type" : "label"
         } ],
         "isDefinedBy" : [ {
@@ -1440,24 +1440,24 @@
         "guidance" : [ {
           "identifier" : "guidance",
           "language" : "undefined",
-          "value" : "<p>See NIST section <a href=\"http://physics.nist.gov/Pubs/SP811/sec06.html#6.2.8\">SP811 section 6.2.8</a></p>",
+          "value" : "<p>See NIST section <a href=\"http://physics.nist.gov/Pubs/SP811/sec04.html#4.2.1.1\">SP811 section 4.2.1.1</a></p>",
           "type" : "label"
         }, {
           "identifier" : "guidance",
           "language" : "undefined",
-          "value" : "<p>See NIST section <a href=\"http://physics.nist.gov/Pubs/SP811/sec04.html#4.2.1.1\">SP811 section 4.2.1.1</a></p>",
-          "type" : "label"
-        } ],
-        "informativeReference" : [ {
-          "identifier" : "informativeReference",
-          "language" : "undefined",
-          "value" : "http://en.wikipedia.org/wiki/Celsius?oldid=494152178",
+          "value" : "<p>See NIST section <a href=\"http://physics.nist.gov/Pubs/SP811/sec06.html#6.2.8\">SP811 section 6.2.8</a></p>",
           "type" : "label"
         } ],
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
           "value" : "Cel",
+          "type" : "label"
+        } ],
+        "informativeReference" : [ {
+          "identifier" : "informativeReference",
+          "language" : "undefined",
+          "value" : "http://en.wikipedia.org/wiki/Celsius?oldid=494152178",
           "type" : "label"
         } ],
         "altLabel" : [ {
@@ -1475,18 +1475,18 @@
         "udunitsCode" : [ {
           "identifier" : "udunitsCode",
           "language" : "undefined",
-          "value" : "℃",
+          "value" : "°C",
           "type" : "label"
         }, {
           "identifier" : "udunitsCode",
           "language" : "undefined",
-          "value" : "°C",
+          "value" : "℃",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "de" : "Grad Celsius",
         "hi" : "सेल्सियस",
+        "de" : "Grad Celsius",
         "IRI-based" : "DEG_C",
         "ru" : "градус Цельсия",
         "pt" : "grau celsius",
@@ -1497,8 +1497,8 @@
         "it" : "grado celsius",
         "fr" : "degré celsius",
         "hu" : "Celsius-fok",
-        "es" : "grado celsius",
         "zh" : "摄氏度",
+        "es" : "grado celsius",
         "cs" : "stupně celsia",
         "ar" : "درجة مئوية",
         "la" : "gradus celsii",
@@ -1506,8 +1506,8 @@
         "sl" : "stopinja Celzija",
         "fa" : "درجه سانتی گراد/سلسیوس",
         "pl" : "stopień celsjusza",
-        "ro" : "grad celsius",
         "he" : "צלזיוס",
+        "ro" : "grad celsius",
         "tr" : "celsius"
       }
     }, {
@@ -1517,16 +1517,16 @@
         "undefined" : "The S I unit of area is the square metre."
       },
       "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "MTK",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "m²",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "MTK",
           "type" : "label"
         } ],
         "isDefinedBy" : [ {
@@ -1555,11 +1555,11 @@
         } ]
       },
       "labels" : {
-        "hi" : "वर्ग मीटर",
         "de" : "Quadratmeter",
+        "hi" : "वर्ग मीटर",
         "IRI-based" : "M2",
-        "en-us" : "Square Meter",
         "ru" : "квадратный метр",
+        "en-us" : "Square Meter",
         "pt" : "metro quadrado",
         "bg" : "квадратен метър",
         "fr" : "mètre carré",
@@ -1606,16 +1606,16 @@
           "value" : "http://qudt.org/2.1/vocab/unit",
           "type" : "iri"
         } ],
-        "informativeReference" : [ {
-          "identifier" : "informativeReference",
-          "language" : "undefined",
-          "value" : "http://en.wikipedia.org/wiki/Cubic_metre?oldid=490956678",
-          "type" : "label"
-        } ],
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
           "value" : "m3",
+          "type" : "label"
+        } ],
+        "informativeReference" : [ {
+          "identifier" : "informativeReference",
+          "language" : "undefined",
+          "value" : "http://en.wikipedia.org/wiki/Cubic_metre?oldid=490956678",
           "type" : "label"
         } ],
         "dbpediaMatch" : [ {
@@ -1626,11 +1626,11 @@
         } ]
       },
       "labels" : {
-        "de" : "Kubikmeter",
         "hi" : "घन मीटर",
+        "de" : "Kubikmeter",
         "IRI-based" : "M3",
-        "ru" : "кубический метр",
         "en-us" : "Cubic Meter",
+        "ru" : "кубический метр",
         "pt" : "metro cúbico",
         "bg" : "кубичен метър",
         "ms" : "meter kubik",
@@ -1650,51 +1650,6 @@
         "he" : "מטר מעוקב",
         "ro" : "metru cub",
         "tr" : "metreküp"
-      }
-    }, {
-      "iri" : "http://qudt.org/vocab/unit/MegaOHM",
-      "baseIri" : "http://qudt.org/vocab/unit",
-      "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "B75",
-          "type" : "label"
-        } ],
-        "symbol" : [ {
-          "identifier" : "symbol",
-          "language" : "undefined",
-          "value" : "MΩ",
-          "type" : "label"
-        } ],
-        "plainTextDescription" : [ {
-          "identifier" : "plainTextDescription",
-          "language" : "undefined",
-          "value" : "1,000,000-fold of the derived unit ohm",
-          "type" : "label"
-        } ],
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "http://qudt.org/2.1/vocab/unit",
-          "type" : "iri"
-        } ],
-        "prefix" : [ {
-          "identifier" : "prefix",
-          "language" : "undefined",
-          "value" : "http://qudt.org/vocab/prefix/Mega",
-          "type" : "iri"
-        } ],
-        "ucumCode" : [ {
-          "identifier" : "ucumCode",
-          "language" : "undefined",
-          "value" : "MOhm",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MegaOHM",
-        "en" : "Megaohm"
       }
     }, {
       "iri" : "http://qudt.org/vocab/unit/SEC",
@@ -1753,8 +1708,8 @@
         } ]
       },
       "labels" : {
-        "hi" : "सैकण्ड",
         "de" : "Sekunde",
+        "hi" : "सैकण्ड",
         "IRI-based" : "SEC",
         "ru" : "секунда",
         "pt" : "segundo",
@@ -1779,6 +1734,51 @@
         "tr" : "saniye"
       }
     }, {
+      "iri" : "http://qudt.org/vocab/unit/MegaOHM",
+      "baseIri" : "http://qudt.org/vocab/unit",
+      "annotations" : {
+        "symbol" : [ {
+          "identifier" : "symbol",
+          "language" : "undefined",
+          "value" : "MΩ",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "B75",
+          "type" : "label"
+        } ],
+        "plainTextDescription" : [ {
+          "identifier" : "plainTextDescription",
+          "language" : "undefined",
+          "value" : "1,000,000-fold of the derived unit ohm",
+          "type" : "label"
+        } ],
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "http://qudt.org/2.1/vocab/unit",
+          "type" : "iri"
+        } ],
+        "prefix" : [ {
+          "identifier" : "prefix",
+          "language" : "undefined",
+          "value" : "http://qudt.org/vocab/prefix/Mega",
+          "type" : "iri"
+        } ],
+        "ucumCode" : [ {
+          "identifier" : "ucumCode",
+          "language" : "undefined",
+          "value" : "MOhm",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MegaOHM",
+        "en" : "Megaohm"
+      }
+    }, {
       "iri" : "http://qudt.org/vocab/unit/MIN",
       "baseIri" : "http://qudt.org/vocab/unit",
       "description" : {
@@ -1791,16 +1791,16 @@
           "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Time",
           "type" : "iri"
         } ],
-        "symbol" : [ {
-          "identifier" : "symbol",
-          "language" : "undefined",
-          "value" : "min",
-          "type" : "label"
-        } ],
         "uneceCommonCode" : [ {
           "identifier" : "uneceCommonCode",
           "language" : "undefined",
           "value" : "MIN",
+          "type" : "label"
+        } ],
+        "symbol" : [ {
+          "identifier" : "symbol",
+          "language" : "undefined",
+          "value" : "min",
           "type" : "label"
         } ],
         "isDefinedBy" : [ {
@@ -1833,16 +1833,16 @@
         "undefined" : "Kilogram per cubic metre is an SI derived unit of density, defined by mass in kilograms divided by volume in cubic metres. The official SI symbolic abbreviation is \\(kg \\cdot m^{-3}\\), or equivalently either \\(kg/m^3\\)."
       },
       "annotations" : {
-        "uneceCommonCode" : [ {
-          "identifier" : "uneceCommonCode",
-          "language" : "undefined",
-          "value" : "KMQ",
-          "type" : "label"
-        } ],
         "symbol" : [ {
           "identifier" : "symbol",
           "language" : "undefined",
           "value" : "kg/m³",
+          "type" : "label"
+        } ],
+        "uneceCommonCode" : [ {
+          "identifier" : "uneceCommonCode",
+          "language" : "undefined",
+          "value" : "KMQ",
           "type" : "label"
         } ],
         "plainTextDescription" : [ {
@@ -1860,12 +1860,12 @@
         "ucumCode" : [ {
           "identifier" : "ucumCode",
           "language" : "undefined",
-          "value" : "kg.m-3",
+          "value" : "kg/m3",
           "type" : "label"
         }, {
           "identifier" : "ucumCode",
           "language" : "undefined",
-          "value" : "kg/m3",
+          "value" : "kg.m-3",
           "type" : "label"
         } ]
       },
@@ -1873,8 +1873,8 @@
         "de" : "Kilogramm je Kubikmeter",
         "hi" : "किलोग्राम प्रति घन मीटर",
         "IRI-based" : "KiloGM-PER-M3",
-        "ru" : "килограмм на кубический метр",
         "en-us" : "kilogram per cubic meter",
+        "ru" : "килограмм на кубический метр",
         "pt" : "quilograma por metro cúbico",
         "bg" : "килограм на кубичен метър",
         "ms" : "kilogram per meter kubik",
@@ -1882,8 +1882,8 @@
         "en" : "kilogram per cubic metre",
         "it" : "chilogrammo al metro cubo",
         "fr" : "kilogramme par mètre cube",
-        "zh" : "千克每立方米",
         "es" : "kilogramo por metro cúbico",
+        "zh" : "千克每立方米",
         "cs" : "kilogram na metr krychlový",
         "ar" : "كيلوغرام لكل متر مكعب",
         "ja" : "キログラム毎立方メートル",
@@ -2036,7 +2036,7 @@
       "undefined" : "has quantity kind"
     },
     "domain" : "2",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "1"
   }, {
     "iri" : "http://qudt.org/schema/qudt/numericValue",
@@ -2060,7 +2060,7 @@
       "undefined" : "numeric value"
     },
     "domain" : "6",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "5"
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
@@ -2085,7 +2085,7 @@
       "undefined" : "has quantity kind"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "9"
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasUnit",
@@ -2114,7 +2114,7 @@
       "undefined" : "has unit"
     },
     "domain" : "4",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "11"
   }, {
     "iri" : "http://qudt.org/schema/qudt/quantityValue",
@@ -2138,32 +2138,8 @@
       "undefined" : "quantity value"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "12"
-  }, {
-    "iri" : "http://qudt.org/schema/qudt/quantityValue",
-    "baseIri" : "http://qudt.org/schema/qudt",
-    "range" : "13",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://qudt.org/2.1/schema/qudt",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://qudt.org/2.1/schema/qudt",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "quantityValue",
-      "undefined" : "quantity value"
-    },
-    "domain" : "0",
-    "attributes" : [ "object", "external", "allValues" ],
-    "id" : "14"
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -2187,7 +2163,31 @@
       "undefined" : "has quantity kind"
     },
     "domain" : "0",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/quantityValue",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/2.1/schema/qudt",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://qudt.org/2.1/schema/qudt",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "quantityValue",
+      "undefined" : "quantity value"
+    },
+    "domain" : "0",
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "15"
   } ]
 }
