@@ -58,16 +58,16 @@
         "value" : "0.1",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "undefined",
-        "value" : "Catena-D Ontology Network - Location Module",
-        "type" : "label"
-      } ],
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
         "value" : "2025-06-30",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Catena-D Ontology Network - Location Module",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -530,7 +530,7 @@
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   } ]
 }
