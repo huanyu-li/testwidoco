@@ -1,0 +1,408 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/CEON/ontology/processODP" ],
+    "title" : {
+      "undefined" : "Circular Economy Ontology Network (CEON) - Process ODP"
+    },
+    "iri" : "http://w3id.org/Catena-D/ontology/processODP/",
+    "version" : "0.1",
+    "author" : [ "Huanyu Li" ],
+    "description" : {
+      "undefined" : "A core ODP of the CEON ontology network, defining aspects of the process concept."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Huanyu Li",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Eva Blomqvist",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-05-20",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "Catena-D-processODP",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Onto-DESIDE",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/Catena-D/ontology/processODP/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Circular Economy Ontology Network (CEON) - Process ODP",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2025-06-30",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/Process",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process",
+      "undefined" : "Process"
+    },
+    "comment" : {
+      "en" : "Something that takes place over a (longer) period of time and changes some state of affairs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "9",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/Activity",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "11",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/TimeInterval",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeInterval",
+      "undefined" : "Time Interval"
+    },
+    "comment" : {
+      "undefined" : "A temporal entity has a starting time and an ending time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/Event",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "comment" : {
+      "undefined" : "Something that happens within a given context or (short) timeframe."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/Situation",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Situation",
+      "undefined" : "Situation"
+    },
+    "comment" : {
+      "undefined" : "A situation that may involve some resources and actors, i.e. a state of affairs at a certain point in time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/endTime",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "endTime",
+      "undefined" : "end time"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Represents the end time of a time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/hasInput",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "undefined" : "has input"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The inputs to a process or event."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityDate",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasActivityDate",
+      "undefined" : "had activity date"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/isSettingFor",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isSettingFor",
+      "undefined" : "is the setting for"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/duringTime",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "duringTime",
+      "undefined" : "during time"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "The time interval during which something, e.g. a process or event, takes place."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/hasOutput",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "undefined" : "has output"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The output of a process or event."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityType",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasActivityType",
+      "undefined" : "has activity type"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/isPerformedOn",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isPerformedOn",
+      "undefined" : "is performed on"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityID",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasActivityID",
+      "undefined" : "has activity ID"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/startTime",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "startTime",
+      "undefined" : "start time"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Represents the start time of a time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "24"
+  } ]
+}
