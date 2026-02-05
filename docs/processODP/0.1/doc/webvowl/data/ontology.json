@@ -262,10 +262,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "20",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "21",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "22",
     "type" : "owl:objectProperty"
@@ -288,7 +288,7 @@
     "comment" : {
       "undefined" : "Represents the end time of a time interval."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "0"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/hasInput",
@@ -313,7 +313,7 @@
       "undefined" : "had activity date"
     },
     "domain" : "10",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/isSettingFor",
@@ -344,6 +344,17 @@
     "attributes" : [ "object", "external" ],
     "id" : "19"
   }, {
+    "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityType",
+    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasActivityType",
+      "undefined" : "has activity type"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "20"
+  }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/hasOutput",
     "baseIri" : "http://w3id.org/CEON/ontology/processODP",
     "range" : "11",
@@ -356,17 +367,6 @@
       "undefined" : "The output of a process or event."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "20"
-  }, {
-    "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityType",
-    "baseIri" : "http://w3id.org/CEON/ontology/processODP",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "hasActivityType",
-      "undefined" : "has activity type"
-    },
-    "domain" : "10",
-    "attributes" : [ "datatype", "external" ],
     "id" : "21"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/isPerformedOn",
@@ -388,7 +388,7 @@
       "undefined" : "has activity ID"
     },
     "domain" : "10",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "23"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/startTime",
@@ -402,7 +402,7 @@
     "comment" : {
       "undefined" : "Represents the start time of a time interval."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "24"
   } ]
 }
