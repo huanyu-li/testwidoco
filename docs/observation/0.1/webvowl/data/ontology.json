@@ -216,7 +216,7 @@
       "IRI-based" : "hasActualStateProperty"
     },
     "domain" : "4",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "3"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/hasObservationValue",
@@ -226,7 +226,7 @@
       "IRI-based" : "hasObservationValue"
     },
     "domain" : "7",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "6"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/hasObservationParameter",
@@ -236,7 +236,7 @@
       "IRI-based" : "hasObservationParameter"
     },
     "domain" : "7",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "9"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/consistsOf",
@@ -246,7 +246,7 @@
       "IRI-based" : "consistsOf"
     },
     "domain" : "14",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "13"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/hasStatePropertyValue",
@@ -266,7 +266,7 @@
       "IRI-based" : "observesOnFeatureOfInterest"
     },
     "domain" : "7",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/hasValueForObservationParameter",
@@ -276,7 +276,7 @@
       "IRI-based" : "hasValueForObservationParameter"
     },
     "domain" : "10",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "18"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/observesOnProperty",
@@ -286,7 +286,7 @@
       "IRI-based" : "observesOnProperty"
     },
     "domain" : "7",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "19"
   }, {
     "iri" : "http://w3id.org/Catena-D/ontology/observation/hasParameterTextualValue",
@@ -307,7 +307,7 @@
       "IRI-based" : "isObservedBy"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "21"
   } ]
 }

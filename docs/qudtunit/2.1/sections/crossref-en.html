@@ -1,196 +1,6 @@
 <h2 id="crossreference" class="list">Cross-reference for Circular Economy Ontology Network (CEON) - Subset of the QUDT Unit Schema classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Circular Economy Ontology Network (CEON) - Subset of the QUDT Unit Schema.
-<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
- <h3 id="classes-headline" class="list">Classes</h3>
- <ul class="hlist">
-  <li><a href="#http://qudt.org/schema/qudt/Quantity" title="http://qudt.org/schema/qudt/Quantity">Quantity</a></li>
-  <li><a href="#http://qudt.org/schema/qudt/QuantityKind" title="http://qudt.org/schema/qudt/QuantityKind">Quantity Kind</a></li>
-  <li><a href="#http://qudt.org/schema/qudt/QuantityValue" title="http://qudt.org/schema/qudt/QuantityValue">Quantity Value</a></li>
-  <li><a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a></li>
- </ul>
- <div class="entity" id="http://qudt.org/schema/qudt/Quantity">
-  <h3>Quantity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/Quantity</p>
-  <div class="comment">
-   <span class="markdown">&lt;p class="lm-para"&gt;A &lt;b&gt;quantity&lt;/b&gt; is the measurement of an observable property of a particular object, event, or physical system. A quantity is always associated with the context of measurement (i.e. the thing measured, the measured value, the accuracy of measurement, etc.) whereas the underlying &lt;b&gt;quantity kind&lt;/b&gt; is independent of any particular measurement. Thus, length is a quantity kind while the height of a rocket is a specific quantity of length; its magnitude that may be expressed in meters, feet, inches, etc. Examples of physical quantities include physical constants, such as the speed of light in a vacuum, Planck's constant, the electric permittivity of free space, and the fine structure constant. &lt;/p&gt; &lt;p class="lm-para"&gt;In other words, quantities are quantifiable aspects of the world, such as the duration of a movie, the distance between two points, velocity of a car, the pressure of the atmosphere, and a person's weight; and units are used to describe their numerical measure. &lt;/p&gt;&lt;p class="lm-para"&gt;Many &lt;b&gt;quantity kinds&lt;/b&gt; are related to each other by various physical laws, and as a result, the associated units of some quantity kinds can be expressed as products (or ratios) of powers of other quantity kinds (e.g., momentum is mass times velocity and velocity is defined as distance divided by time). In this way, some quantities can be calculated from other measured quantities using their associations to the quantity kinds in these expressions. These quantity kind relationships are also discussed in dimensional analysis. Those that cannot be so expressed can be regarded as &amp;quot;fundamental&amp;quot; in this sense.&lt;/p&gt; &lt;p class="lm-para"&gt;A quantity is distinguished from a &amp;quot;quantity kind&amp;quot; in that the former carries a value and the latter is a type specifier.&lt;/p&gt;</span>
-  </div>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://qudt.org/2.1/schema/qudt">http://qudt.org/2.1/schema/qudt</a>
-   </dd>
-  </dl>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd></dd>
-  </dl>
- </div>
- <div class="entity" id="http://qudt.org/schema/qudt/QuantityKind">
-  <h3>Quantity Kind<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/QuantityKind</p>
-  <div class="comment">
-   <span class="markdown">A &lt;b&gt;Quantity Kind&lt;/b&gt; is any observable property that can be measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.</span>
-  </div>
-  <div class="info">
-   <span class="markdown">A Quantity Kind is any observable property that can be measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.</span>
-  </div>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://qudt.org/2.1/schema/qudt">http://qudt.org/2.1/schema/qudt</a>
-   </dd>
-  </dl>
-  <dl class="description">
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://qudt.org/schema/qudt/QuantityValue">
-  <h3>Quantity Value<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/QuantityValue</p>
-  <div class="info">
-   <span class="markdown">A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#http://qudt.org/schema/qudt/quantityValue" title="http://qudt.org/schema/qudt/quantityValue">quantity value</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://qudt.org/schema/qudt/Unit">
-  <h3>Unit<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/Unit</p>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://qudt.org/2.1/schema/qudt">http://qudt.org/2.1/schema/qudt</a>
-   </dd>
-  </dl>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd></dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#http://qudt.org/schema/qudt/hasUnit" title="http://qudt.org/schema/qudt/hasUnit">has unit</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#/CentiM" title="http://qudt.org/vocab/unit/CentiM">Centimetre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/DAY" title="http://qudt.org/vocab/unit/DAY">Day</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/DeciL" title="http://qudt.org/vocab/unit/DeciL">Decilitre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/DeciM" title="http://qudt.org/vocab/unit/DeciM">Decimetre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/GM" title="http://qudt.org/vocab/unit/GM">Gram</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/GM-PER-M3" title="http://qudt.org/vocab/unit/GM-PER-M3">Gram Per Cubic Metre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/GM-PER-L" title="http://qudt.org/vocab/unit/GM-PER-L">Gram Per Litre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/HR" title="http://qudt.org/vocab/unit/HR">Hour</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/KiloGM-PER-L" title="http://qudt.org/vocab/unit/KiloGM-PER-L">Kilogram Per Litre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/KiloGM-PER-M2" title="http://qudt.org/vocab/unit/KiloGM-PER-M2">Kilogram per Square Metre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/KiloM" title="http://qudt.org/vocab/unit/KiloM">Kilometre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/KiloOHM" title="http://qudt.org/vocab/unit/KiloOHM">Kiloohm</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/L" title="http://qudt.org/vocab/unit/L">Litre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/MegaOHM" title="http://qudt.org/vocab/unit/MegaOHM">Megaohm</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/MilliL" title="http://qudt.org/vocab/unit/MilliL">Millilitre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/MilliM" title="http://qudt.org/vocab/unit/MilliM">Millimetre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/MIN" title="http://qudt.org/vocab/unit/MIN">Minute</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/NUM" title="http://qudt.org/vocab/unit/NUM">Number</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/CentiM2" title="http://qudt.org/vocab/unit/CentiM2">Square Centimetre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/DeciM2" title="http://qudt.org/vocab/unit/DeciM2">Square Decimetre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/MilliM2" title="http://qudt.org/vocab/unit/MilliM2">Square Millimetre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/TONNE" title="http://qudt.org/vocab/unit/TONNE">Tonne</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/YR" title="http://qudt.org/vocab/unit/YR">Year</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/M3" title="http://qudt.org/vocab/unit/M3">cubic metre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/DEG_C" title="http://qudt.org/vocab/unit/DEG_C">degree Celsius</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/KiloGM" title="http://qudt.org/vocab/unit/KiloGM">kilogram</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/KiloGM-PER-M3" title="http://qudt.org/vocab/unit/KiloGM-PER-M3">kilogram per cubic metre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/M" title="http://qudt.org/vocab/unit/M">metre</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/OHM" title="http://qudt.org/vocab/unit/OHM">ohm</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/SEC" title="http://qudt.org/vocab/unit/SEC">second</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/M2" title="http://qudt.org/vocab/unit/M2">square metre</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
- <h3 id="properties" class="list">Object Properties</h3>
- <ul class="hlist">
-  <li><a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a></li>
-  <li><a href="#http://qudt.org/schema/qudt/hasUnit" title="http://qudt.org/schema/qudt/hasUnit">has unit</a></li>
-  <li><a href="#http://qudt.org/schema/qudt/quantityValue" title="http://qudt.org/schema/qudt/quantityValue">quantity value</a></li>
- </ul>
- <div class="entity" id="http://qudt.org/schema/qudt/hasQuantityKind">
-  <h3>has quantity kind<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/hasQuantityKind</p>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://qudt.org/2.1/schema/qudt">http://qudt.org/2.1/schema/qudt</a>
-   </dd>
-  </dl>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#http://qudt.org/schema/qudt/QuantityKind" title="http://qudt.org/schema/qudt/QuantityKind">Quantity Kind</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://qudt.org/schema/qudt/hasUnit">
-  <h3>has unit<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/hasUnit</p>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://qudt.org/2.1/schema/qudt">http://qudt.org/2.1/schema/qudt</a>
-   </dd>
-  </dl>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://qudt.org/schema/qudt/quantityValue">
-  <h3>quantity value<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/quantityValue</p>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://qudt.org/2.1/schema/qudt">http://qudt.org/2.1/schema/qudt</a>
-   </dd>
-  </dl>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#http://qudt.org/schema/qudt/QuantityValue" title="http://qudt.org/schema/qudt/QuantityValue">Quantity Value</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
- <h3 id="dataproperties-headline" class="list">Data Properties</h3>
- <ul class="hlist">
-  <li><a href="#http://qudt.org/schema/qudt/numericValue" title="http://qudt.org/schema/qudt/numericValue">numeric value</a></li>
- </ul>
- <div class="entity" id="http://qudt.org/schema/qudt/numericValue">
-  <h3>numeric value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://qudt.org/schema/qudt/numericValue</p>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://qudt.org/2.1/schema/qudt">http://qudt.org/2.1/schema/qudt</a>
-   </dd>
-  </dl>
- </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
  <h3 id="namedindividuals" class="list">Named Individuals</h3>
  <ul class="hlist">
   <li><a href="#/CentiM" title="http://qudt.org/vocab/unit/CentiM">Centimetre</a></li>
@@ -241,13 +51,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A centimetre is a unit of length in the metric system, equal to one hundredth of a metre, which is the SI base unit of length. Centi is the SI prefix for a factor of 10. The centimetre is the base unit of length in the now deprecated centimetre-gram-second (CGS) system of units."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -288,13 +98,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The SI unit of volume, equal to 1.0e6 cm3, 1000 liters, 35.3147 ft3, or 1.30795 yd3. A cubic meter holds about 264.17 U.S. liquid gallons or 219.99 British Imperial gallons."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -332,13 +142,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Mean solar day"^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -382,13 +192,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"0.1-fold of the unit litre"</span>
@@ -420,13 +230,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A decimeter is a tenth of a meter."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -461,7 +271,7 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -520,13 +330,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Mass" target="_blank" title="http://qudt.org/vocab/quantitykind/Mass">Mass</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Mass" target="_blank" title="http://qudt.org/vocab/quantitykind/Mass">Mass</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A unit of mass in the metric system. The name comes from the Greek gramma, a small weight identified in later Roman and Byzantine times with the Latin scripulum or scruple (the English scruple is equal to about 1.3 grams). The gram was originally defined to be the mass of one cubic centimeter of pure water, but to provide precise standards it was necessary to construct physical objects of specified mass. One gram is now defined to be 1/1000 of the mass of the standard kilogram, a platinum-iridium bar carefully guarded by the International Bureau of Weights and Measures in Paris for more than a century. (The kilogram, rather than the gram, is considered the base unit of mass in the SI.) The gram is a small mass, equal to about 15.432 grains or 0.035 273 966 ounce. "^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -570,13 +380,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"0,001-fold of the SI base unit kilogram divided by the power of the SI base unit metre with the exponent 3"</span>
@@ -611,13 +421,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"0,001-fold of the SI base unit kilogram divided by the unit litre"</span>
@@ -649,13 +459,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The hour (common symbol: h or hr) is a unit of measurement of time. In modern usage, an hour comprises 60 minutes, or 3,600 seconds. It is approximately 1/24 of a mean solar day. An hour in the Universal Coordinated Time (UTC) time standard can include a negative or positive leap second, and may therefore have a duration of 3,599 or 3,601 seconds for adjustment purposes. Although it is not a standard defined by the International System of Units, the hour is a unit accepted for use with SI, represented by the symbol h."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -699,13 +509,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Mass" target="_blank" title="http://qudt.org/vocab/quantitykind/Mass">Mass</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Mass" target="_blank" title="http://qudt.org/vocab/quantitykind/Mass">Mass</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/dbpediaMatch" target="_blank" title="http://qudt.org/schema/qudt/dbpediaMatch">dbpedia Match</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://dbpedia.org/resource/Kilogram" target="_blank">http://dbpedia.org/resource/Kilogram</a>
@@ -746,13 +556,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Kilogram per cubic metre is an SI derived unit of density, defined by mass in kilograms divided by volume in cubic metres. The official SI symbolic abbreviation is \(kg \cdot m^{-3}\), or equivalently either \(kg/m^3\)."^^<a href="http://qudt.org/schema/qudt/LatexString" target="_blank" title="http://qudt.org/schema/qudt/LatexString">Latex String</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -790,13 +600,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Density" target="_blank" title="http://qudt.org/vocab/quantitykind/Density">Density</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"SI base unit kilogram divided by the unit litre"</span>
@@ -831,7 +641,7 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
@@ -869,13 +679,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A common metric unit of length or distance. One kilometer equals exactly 1000 meters, about 0.621 371 19 mile, 1093.6133 yards, or 3280.8399 feet. Oddly, higher multiples of the meter are rarely used; even the distances to the farthest galaxies are usually measured in kilometers. "^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -916,13 +726,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Resistance" target="_blank" title="http://qudt.org/vocab/quantitykind/Resistance">Resistance</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Resistance" target="_blank" title="http://qudt.org/vocab/quantitykind/Resistance">Resistance</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"1 000-fold of the SI derived unit ohm"</span>
@@ -957,16 +767,16 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/LiquidVolume" target="_blank" title="http://qudt.org/vocab/quantitykind/LiquidVolume">Liquid Volume</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/LiquidVolume" target="_blank" title="http://qudt.org/vocab/quantitykind/LiquidVolume">Liquid Volume</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The \(litre\) (American spelling: \(\textit{liter}\); SI symbol \(l\) or \(L\)) is a non-SI metric system unit of volume equal to \(1 \textit{cubic decimetre}\) (\(dm^3\)), 1,000 cubic centimetres (\(cm^3\)) or \(1/1000 \textit{cubic metre}\). If the lower case "L" is used as the symbol, it is sometimes rendered as a cursive "l" to help distinguish it from the capital "I", although this usage has no official approval by any international bureau."^^<a href="http://qudt.org/schema/qudt/LatexString" target="_blank" title="http://qudt.org/schema/qudt/LatexString">Latex String</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1016,13 +826,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Resistance" target="_blank" title="http://qudt.org/vocab/quantitykind/Resistance">Resistance</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Resistance" target="_blank" title="http://qudt.org/vocab/quantitykind/Resistance">Resistance</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"1,000,000-fold of the derived unit ohm"</span>
@@ -1057,13 +867,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The metric and SI base unit of distance. The 17th General Conference on Weights and Measures in 1983 defined the meter as that distance that makes the speed of light in a vacuum equal to exactly 299 792 458 meters per second. The speed of light in a vacuum, \(c\), is one of the fundamental constants of nature. The meter is equal to approximately 1.093 613 3 yards, 3.280 840 feet, or 39.370 079 inches."^^<a href="http://qudt.org/schema/qudt/LatexString" target="_blank" title="http://qudt.org/schema/qudt/LatexString">Latex String</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1110,13 +920,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Volume" target="_blank" title="http://qudt.org/vocab/quantitykind/Volume">Volume</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"0.001-fold of the unit litre"</span>
@@ -1148,13 +958,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The millimetre (International spelling as used by the International Bureau of Weights and Measures) or millimeter (American spelling) (SI unit symbol mm) is a unit of length in the metric system, equal to one thousandth of a metre, which is the SI base unit of length. It is equal to 1000 micrometres or 1000000 nanometres. A millimetre is equal to exactly 5/127 (approximately 0.039370) of an inch."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -1198,13 +1008,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A minute is a unit of measurement of time. The minute is a unit of time equal to 1/60 (the first sexagesimal fraction of an hour or 60 seconds. In the UTC time scale, a minute on rare occasions has 59 or 61 seconds; see leap second. The minute is not an SI unit; however, it is accepted for use with SI units. The SI symbol for minute or minutes is min (for time measurement) or the prime symbol after a number, e.g. 5' (for angle measurement, even if it is informally used for time)."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -1242,13 +1052,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Dimensionless" target="_blank" title="http://qudt.org/vocab/quantitykind/Dimensionless">Dimensionless</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Dimensionless" target="_blank" title="http://qudt.org/vocab/quantitykind/Dimensionless">Dimensionless</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">""Number" is a unit for 'Dimensionless' expressed as (\#\)."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -1280,13 +1090,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Resistance" target="_blank" title="http://qudt.org/vocab/quantitykind/Resistance">Resistance</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Resistance" target="_blank" title="http://qudt.org/vocab/quantitykind/Resistance">Resistance</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The \textit{ohm} is the SI derived unit of electrical resistance, named after German physicist Georg Simon Ohm. \(\Omega \equiv\ \frac{\text{V}}{\text{A}}\ \equiv\ \frac{\text{volt}}{\text{amp}}\ \equiv\ \frac{\text{W}}{\text {A}^{2}}\ \equiv\ \frac{\text{watt}}{\text{amp}^{2}}\ \equiv\ \frac{\text{H}}{\text {s}}\ \equiv\ \frac{\text{henry}}{\text{second}}\)"^^<a href="http://qudt.org/schema/qudt/LatexString" target="_blank" title="http://qudt.org/schema/qudt/LatexString">Latex String</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1330,13 +1140,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The \(Second\) (symbol: \(s\)) is the base unit of time in the International System of Units (SI) and is also a unit of time in other systems of measurement. Between the years1000 (when al-Biruni used seconds) and 1960 the second was defined as \(1/86400\) of a mean solar day (that definition still applies in some astronomical and legal contexts). Between 1960 and 1967, it was defined in terms of the period of the Earth's orbit around the Sun in 1900, but it is now defined more precisely in atomic terms. Under the International System of Units (via the International Committee for Weights and Measures, or CIPM), since 1967 the second has been defined as the duration of \({9192631770}\) periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.In 1997 CIPM added that the periods would be defined for a caesium atom at rest, and approaching the theoretical temperature of absolute zero, and in 1999, it included corrections from ambient radiation."^^<a href="http://qudt.org/schema/qudt/LatexString" target="_blank" title="http://qudt.org/schema/qudt/LatexString">Latex String</a> <sup class="type-ep" title="external property">ep</sup> </span>
@@ -1380,13 +1190,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A unit of area equal to that of a square, of sides 1cm"^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -1421,13 +1231,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"0.1-fold of the power of the SI base unit metre with the exponent 2"</span>
@@ -1462,13 +1272,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The S I unit of area is the square metre."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -1506,13 +1316,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Area" target="_blank" title="http://qudt.org/vocab/quantitykind/Area">Area</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"0.000001-fold of the power of the SI base unit metre with the exponent 2"</span>
@@ -1547,13 +1357,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Mass" target="_blank" title="http://qudt.org/vocab/quantitykind/Mass">Mass</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Mass" target="_blank" title="http://qudt.org/vocab/quantitykind/Mass">Mass</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://qudt.org/schema/qudt/plainTextDescription" target="_blank" title="http://qudt.org/schema/qudt/plainTextDescription">plain Text Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"1,000-fold of the SI base unit kilogram"</span>
@@ -1588,13 +1398,13 @@ This section provides details for each class and property defined by Circular Ec
     belongs to
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://qudt.org/schema/qudt/Unit" target="_blank" title="http://qudt.org/schema/qudt/Unit">Unit</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has facts
    </dt>
    <dd>
-    <a href="#http://qudt.org/schema/qudt/hasQuantityKind" title="http://qudt.org/schema/qudt/hasQuantityKind">has quantity kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Time" target="_blank" title="http://qudt.org/vocab/quantitykind/Time">Time</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A year is any of the various periods equated with one passage of Earth about the Sun, and hence of roughly 365 days. The familiar calendar has a mixture of 365- and 366-day years, reflecting the fact that the time for one complete passage takes about 365¼ days; the precise value for this figure depends on the manner of defining the year."^^<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML">H T M L</a> </span>
@@ -1622,9 +1432,7 @@ This section provides details for each class and property defined by Circular Ec
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
-<sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
-<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
 <sup class="type-ep" title="External Properties">ep</sup>: External Properties
 </div>
