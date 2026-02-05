@@ -46,16 +46,16 @@
         "value" : "Catena-D-location",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://w3id.org/Catena-D/ontoloy/location/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ],
       "issued" : [ {
@@ -407,22 +407,8 @@
     "comment" : {
       "undefined" : "Represents the location of an actor or resource."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "20"
-  }, {
-    "iri" : "http://w3id.org/CEON/ontology/location/hasStreetAddress",
-    "baseIri" : "http://w3id.org/CEON/ontology/location",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "hasStreetAddress",
-      "undefined" : "has street address"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Represents address of a street, including e.g., street number and name."
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "22"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/location/hasCountryCode",
     "baseIri" : "http://w3id.org/CEON/ontology/location",
@@ -442,6 +428,20 @@
     "domain" : "1",
     "comment" : {
       "undefined" : "Represents the code of a country's name according to ISO 3166-1."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/location/hasStreetAddress",
+    "baseIri" : "http://w3id.org/CEON/ontology/location",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasStreetAddress",
+      "undefined" : "has street address"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Represents address of a street, including e.g., street number and name."
     },
     "attributes" : [ "datatype", "external" ],
     "id" : "23"
@@ -508,7 +508,7 @@
   }, {
     "range" : "11",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/location/hasGlobalLocationNumber",

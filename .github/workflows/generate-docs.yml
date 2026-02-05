@@ -67,7 +67,6 @@ jobs:
               -ontFile "$ontology_file" \
               -outFolder "$output_dir" \
               -rewriteAll \
-              -includeImportedOntologies \
               -webVowl \
               -licensius 
             

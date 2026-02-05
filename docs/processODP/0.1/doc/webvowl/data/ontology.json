@@ -49,28 +49,28 @@
         "value" : "Onto-DESIDE",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://w3id.org/Catena-D/ontology/processODP/",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "Circular Economy Ontology Network (CEON) - Process ODP",
+        "value" : "http://w3id.org/Catena-D/ontology/processODP/",
         "type" : "label"
       } ],
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
         "value" : "2025-06-30",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Circular Economy Ontology Network (CEON) - Process ODP",
         "type" : "label"
       } ]
     }
@@ -288,7 +288,7 @@
     "comment" : {
       "undefined" : "Represents the end time of a time interval."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "0"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/hasInput",
@@ -302,7 +302,7 @@
     "comment" : {
       "undefined" : "The inputs to a process or event."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "13"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityDate",
@@ -313,7 +313,7 @@
       "undefined" : "had activity date"
     },
     "domain" : "10",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/isSettingFor",
@@ -327,7 +327,7 @@
     "comment" : {
       "undefined" : "The thing(s) that this situation is the setting for, e.g. a resource that is in a certain state."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "18"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/duringTime",
@@ -341,7 +341,7 @@
     "comment" : {
       "undefined" : "The time interval during which something, e.g. a process or event, takes place."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "19"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityType",
@@ -352,7 +352,7 @@
       "undefined" : "has activity type"
     },
     "domain" : "10",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "20"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/hasOutput",
@@ -366,7 +366,7 @@
     "comment" : {
       "undefined" : "The output of a process or event."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "21"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/isPerformedOn",
@@ -377,7 +377,7 @@
       "undefined" : "is performed on"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "22"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/hasActivityID",
@@ -388,7 +388,7 @@
       "undefined" : "has activity ID"
     },
     "domain" : "10",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "23"
   }, {
     "iri" : "http://w3id.org/CEON/ontology/processODP/startTime",
@@ -402,7 +402,7 @@
     "comment" : {
       "undefined" : "Represents the start time of a time interval."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "24"
   } ]
 }
